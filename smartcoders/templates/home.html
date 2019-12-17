@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TRAINS</title>
+</head>
+<body>
+
+
+
+<h1>List of TRAINS</h1>
+<table border="1" width="600">
+<tr>
+    <td>TR_NO</td>
+    <td>TR_NAME</td>
+    <td>DEP</td>
+    <td>ARR</td>
+    <td>DURATION</td>
+</tr>
+
+{% for train in trains %}
+    <tr>
+    <td>
+        {{train.tr_no}}
+        {{train.tr_name}}
+        {{ train.dep }}
+        {{train.arr}}
+        {{train.duration}}
+    </td>
+    </tr>
+{% endfor %}
+</table>
+
+
+</body>
+</html>
